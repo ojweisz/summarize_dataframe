@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "test-project"
+name = "summarize_dataframe"
 version = "0.1.0"
 description = ""
 authors = ["Olivier Weisz <olivier.weisz@xomnia.com>"]
@@ -16,7 +16,12 @@ pandas = "^2.2.3"
 pytest = "^8.3.4"
 commitizen = "^4.0.0"
 pre-commit = "^4.0.1"
-
+black = "^24.10.0"
+flake8 = "^7.1.1"
+pylint = "^3.3.2"
+tox = "^3.28.0"
+tox-poetry-installer = {extras = ["poetry"], version = "^0.10.3"}
+tox-gh-actions = "2.12.0"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
